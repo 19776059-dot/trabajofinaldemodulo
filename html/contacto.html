@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Escape | Contacto</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff; /* Fondo blanco web limpio */
+            color: #333333;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        /* --- CONTENEDORES PRINCIPALES --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header .logo img {
+            max-height: 50px;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #222222;
+            font-size: 0.95rem;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #32cd32;
+        }
+
+        /* --- BANNER --- */
+        .banner {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url('./imagenes/T.jpeg') center/cover no-repeat #7f8c8d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .banner p {
+            font-size: 1.15rem;
+            font-weight: 400;
+        }
+
+        /* --- SECCIÓN CONTACTO --- */
+        .contacto-section {
+            padding: 60px 0;
+            background-color: #ffffff;
+        }
+
+        .contacto-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .contacto-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        /* Información de Contacto (Izquierda) */
+        .informacion h2 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        .dato {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 22px;
+            color: #333333;
+            font-size: 1rem;
+        }
+
+        .dato i {
+            color: #32cd32; /* Verde brillante característico */
+            font-size: 1.3rem;
+            width: 25px;
+            text-align: center;
+        }
+
+        /* Redes Sociales */
+        .redes {
+            display: flex;
+            gap: 18px;
+            margin-top: 35px;
+        }
+
+        .redes i {
+            font-size: 1.8rem;
+            color: #32cd32;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .redes i:hover {
+            transform: scale(1.1);
+        }
+
+        /* Formulario (Derecha) */
+        .formulario p {
+            font-size: 1.05rem;
+            color: #666666;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .formulario form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #cccccc;
+            border-radius: 3px;
+            font-size: 0.95rem;
+            color: #333333;
+            outline: none;
+            background-color: #ffffff;
+            transition: border-color 0.2s;
+        }
+
+        .formulario input:focus, .formulario textarea:focus {
+            border-color: #32cd32;
+        }
+
+        .formulario input::placeholder, .formulario textarea::placeholder {
+            color: #999999;
+        }
+
+        .formulario textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .formulario-btn-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+        }
+
+        .formulario button {
+            padding: 12px 25px;
+            background-color: #32cd32;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s;
+        }
+
+        .formulario button:hover {
+            background-color: #28a745;
+        }
+
+        /* --- MAPA SECCIÓN --- */
+        .mapa-section {
+            width: 100%;
+            height: 450px;
+            background-color: #e5e7eb;
+        }
+
+        .mapa-section iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 25px 0;
+        }
+
+        footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo-footer img {
+            max-height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .footer-dato {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: #dddddd;
+        }
+
+        .footer-dato i {
+            color: #32cd32;
+            font-size: 1rem;
+        }
+
+        .redes-footer {
+            display: flex;
+            gap: 15px;
+        }
+
+        .redes-footer i {
+            font-size: 1.3rem;
+            color: #ffffff;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .redes-footer i:hover {
+            color: #32cd32;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/img/ChatGPT Image 28 jul 2026, 13_40_03.png" alt="Mountain Escape">
+            </div>
+
+             <nav class="nav">
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="Destino.html">Destinos</a>
+            <a href="cabañas.html">Cabañas</a>
+            <a href="iglus.html">Iglús</a>
+            <a href="hotenes.html">Hoteles</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+              <a href="reservaciones.html">Contacto</a>
+        </nav>
+
+        </div>
+    </header>
+    
+
+    <section class="banner">
+        <h1>CONTACTO</h1>
+        <p>Estamos aqui para ayudarte</p>
+    </section>
+
+    <section class="contacto-section">
+        <div class="container">
+            <div class="contacto-grid">
+
+                <div class="informacion">
+                    <h2>Informacion de contacto</h2>
+
+                    <div class="dato">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+503 1234 5678</span>
+                    </div>
+
+                    <div class="dato">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>info@mountainescape.sv</span>
+                    </div>
+
+                    <div class="dato">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>El Salvador, Centroamerica</span>
+                    </div>
+
+                    <div class="dato">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>lunes a domingo</span>
+                    </div>
+
+                    <div class="redes">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+
+                <div class="formulario">
+                    <p>envianos un mensaje</p>
+                    <form action="#" method="POST">
+                        <input type="text" placeholder="nombre" required>
+                        <input type="email" placeholder="correo electronico" required>
+                        <textarea placeholder="" required></textarea>
+                        <div class="formulario-btn-container">
+                            <button type="submit">ENVIAR UN MENSAJE</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mapa-section">
+        <iframe 
+            src="http://googleusercontent.com/maps.google.com/6" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    
+    <footer class="site-footer">
+  <div class="footer-container">
+    
+    
+  <footer class="site-footer">
+  <div class="footer-container">
+    
+    <div class="footer-brand">
+      <img src="img/logo-montana.png" alt="Mountain Escape Logo" class="footer-logo-img">
+      <span class="brand-name">Mountain Escape</span>
+    </div>
+
+    <div class="footer-contact">
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+503 1234 5678</span>
+      </div>
+      <div class="contact-item">
+        <i class="far fa-envelope"></i>
+        <span>info@mountainescape.sv</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>El Salvador, Centroamérica</span>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+  </div>
+</footer>
