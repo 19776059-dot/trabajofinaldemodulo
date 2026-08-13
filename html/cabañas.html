@@ -1,239 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mountain Escape | Cabañas</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="cabañas.css">
+    <title>Cabañas - Mountain Escape El Salvador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- ================= HEADER ================= -->
-
-    <header>
-
-        <div class="container">
-
+    <div class="page-container">
+        <header class="navbar">
             <div class="logo">
-                <img src="./imagenes/logo.png" alt="Mountain Escape">
+                <i class="fa-solid fa-mountain logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-title">MOUNTAIN ESCAPE</span>
+                    <span class="brand-sub">EL SALVADOR</span>
+                </div>
             </div>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="destino.html" class="active">Destino</a>
+                <a href="cabañas.html">Cabañas</a>
+                <a href="iglus.html">Iglus</a>
+                <a href="hoteles.html">Hoteles</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
 
-            <nav class="nav">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="Destino.html">Destinos</a>
-            <a href="cabañas.html">Cabañas</a>
-            <a href="iglus.html">Iglús</a>
-            <a href="hotenes.html">Hoteles</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-             
-        </nav>
-        </div>
+        <section class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80'); background-size: cover; background-position: center;">
+            <div class="hero-bg-placeholder">
+                <h1 class="hero-title">cabañas</h1>
+            </div>
+        </section>
 
-    </header>
+        <section class="catalog-section">
+            <div class="cards-grid">
 
-
-    <!-- ================= BANNER ================= -->
-
-    <section class="banner">
-
-        <h1>Cabañas</h1>
-
-    </section>
-
-
-    <!-- ================= CABAÑAS ================= -->
-
-    <section class="cabanas-section">
-
-        <div class="container">
-
-            <div class="grid-cabanas">
-
-
-                <!-- CABAÑA 1 -->
-
-                <div class="card-cabana">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=600&auto=format&fit=crop"
-                        alt="Cabaña 1">
-
-                    <div class="precio-tag">
-
-                        <span class="desde">Desde</span>
-
-                        <span class="monto">$88</span>
-
-                        <span class="periodo">
-                            por 1 noche
-                        </span>
-
+                <div class="card">
+                    <img class="img-placeholder" src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=600&q=80" alt="Cabaña 1" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                    <div class="price-tag">
+                        <span class="price-label">Precio</span>
+                        <span class="price-amount">$88</span>
+                        <span class="price-period">por 1 noche</span>
                     </div>
-
                 </div>
 
-
-                <!-- CABAÑA 2 -->
-
-                <div class="card-cabana">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=600&auto=format&fit=crop"
-                        alt="Cabaña 2">
-
-                    <div class="precio-tag">
-
-                        <span class="desde">Desde</span>
-
-                        <span class="monto">$94</span>
-
-                        <span class="periodo">
-                            por 1 noche
-                        </span>
-
+                <div class="card">
+                    <img class="img-placeholder" src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=600&q=80" alt="Cabaña 2" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                    <div class="price-tag">
+                        <span class="price-label">Precio</span>
+                        <span class="price-amount">$84</span>
+                        <span class="price-period">por 1 noche</span>
                     </div>
-
                 </div>
 
-
-                <!-- CABAÑA 3 -->
-
-                <div class="card-cabana">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=600&auto=format&fit=crop"
-                        alt="Cabaña 3">
-
-                    <div class="precio-tag">
-
-                        <span class="desde">Desde</span>
-
-                        <span class="monto">$79</span>
-
-                        <span class="periodo">
-                            por 1 noche
-                        </span>
-
+                <div class="card">
+                    <img class="img-placeholder" src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=600&q=80" alt="Cabaña 3" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                    <div class="price-tag">
+                        <span class="price-label">Precio</span>
+                        <span class="price-amount">$79</span>
+                        <span class="price-period">por 1 noche</span>
                     </div>
-
                 </div>
 
-
-                <!-- CABAÑA 4 -->
-
-                <div class="card-cabana">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=600&auto=format&fit=crop"
-                        alt="Cabaña 4">
-
-                    <div class="precio-tag">
-
-                        <span class="desde">Desde</span>
-
-                        <span class="monto">$94</span>
-
-                        <span class="periodo">
-                            por 1 noche
-                        </span>
-
+                <div class="card">
+                    <img class="img-placeholder" src="https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=600&q=80" alt="Cabaña 4" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                    <div class="price-tag">
+                        <span class="price-label">Precio</span>
+                        <span class="price-amount">$94</span>
+                        <span class="price-period">por 1 noche</span>
                     </div>
-
                 </div>
 
-
-                <!-- CABAÑA 5 -->
-
-                <div class="card-cabana">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=600&auto=format&fit=crop"
-                        alt="Cabaña 5">
-
-                    <div class="precio-tag">
-
-                        <span class="desde">Desde</span>
-
-                        <span class="monto">$96</span>
-
-                        <span class="periodo">
-                            por 1 noche
-                        </span>
-
+                <div class="card">
+                    <img class="img-placeholder" src="https://cdn-pro.elsalvador.com/wp-content/uploads/2026/08/LM-Habitaciones-Tamanique-Memos-La-Libertad-Turismo-Familias-Paisaje05.jpg" alt="Cabaña 5" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                    <div class="price-tag">
+                        <span class="price-label">Precio</span>
+                        <span class="price-amount">$96</span>
+                        <span class="price-period">por 1 noche</span>
                     </div>
-
                 </div>
 
-
-                <!-- CABAÑA 6 -->
-
-                <div class="card-cabana">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=600&auto=format&fit=crop"
-                        alt="Cabaña 6">
-
-                    <div class="precio-tag">
-
-                        <span class="desde">Desde</span>
-
-                        <span class="monto">$100</span>
-
-                        <span class="periodo">
-                            por 1 noche
-                        </span>
-
+                <div class="card">
+                    <img class="img-placeholder" src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=600&q=80" alt="Cabaña 6" style="width: 100%; height: 200px; object-fit: cover; display: block;">
+                    <div class="price-tag">
+                        <span class="price-label">Precio</span>
+                        <span class="price-amount">$100</span>
+                        <span class="price-period">por 1 noche</span>
                     </div>
-
                 </div>
-
 
             </div>
+        </section>
 
-        </div>
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="footer-logo-placeholder"></div>
+            </div>
+            
+            <div class="footer-center">
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+503 1234 5678</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>El Salvador chalatenango</span>
+                </div>
+            </div>
 
-    </section>
-
-<footer class="site-footer">
-  <div class="footer-container">
-    
-    <div class="footer-brand">
-      <img src="/assets/img/12 ago 2026, 05_46_12.png" alt="Mountain Escape Logo" class="footer-logo-img">
-      <span class="brand-name">Mountain Escape</span>
+            <div class="footer-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </footer>
     </div>
 
-    <div class="footer-contact">
-      <div class="contact-item">
-        <i class="fas fa-phone-alt"></i>
-        <span>+503 1234 5678</span>
-      </div>
-      <div class="contact-item">
-        <i class="far fa-envelope"></i>
-        <span>info@mountainescape.sv</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>El Salvador, Centroamérica</span>
-      </div>
-    </div>
-
-    <div class="footer-social">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-  </div>
-</footer>
+</body>
+</html
+>

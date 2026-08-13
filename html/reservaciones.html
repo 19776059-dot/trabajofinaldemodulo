@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iglús - Mountain Escape El Salvador</title>
+    <title>Reservaciones - Mountain Escape El Salvador</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="iglus.css">
+    <link rel="stylesheet" href="reservaciones.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
             </div>
             <nav class="nav-menu">
                 <a href="index.html">Inicio</a>
-                <a href="destino.html">Destino</a>
+                <a href="destino.html" class="active">Destino</a>
                 <a href="cabañas.html">Cabañas</a>
                 <a href="iglus.html">Iglus</a>
                 <a href="hoteles.html">Hoteles</a>
@@ -33,68 +33,55 @@
 
         <section class="hero-section">
             <div class="hero-bg-placeholder">
-                <h1 class="hero-title">Iglus</h1>
+                <h1 class="hero-title">RESERVACIONES</h1>
             </div>
         </section>
 
-        <main class="catalog-section">
-            <div class="cards-grid">
+        <main class="reservation-section">
+            <form class="reservation-form" onsubmit="return false;">
+                
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Datos personales</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+                    </div>
 
-                <div class="card">
-                    <div class="img-placeholder0"></div>
-                    <div class="price-tag">
-                        <span class="price-label">Precio</span>
-                        <span class="price-amount">$200</span>
-                        <span class="price-period">por 1 noche</span>
+                    <div class="form-group">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" id="email" placeholder=".Com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" placeholder="Tu telefono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="entrada">Fecha de entada</label>
+                        <input type="date" id="entrada">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="salida">Fecha de salida</label>
+                        <input type="date" id="salida">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="huespedes">Hoespedes</label>
+                        <input type="number" id="huespedes" min="1" placeholder="Número de personas">
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="img-placeholder1"></div>
-                    <div class="price-tag">
-                        <span class="price-label">Precio</span>
-                        <span class="price-amount">$199</span>
-                        <span class="price-period">por 1 noche</span>
-                    </div>
+                <div class="form-group full-width">
+                    <label for="comentarios">Comentarios adicionales(opcional)</label>
+                    <textarea id="comentarios" rows="5"></textarea>
                 </div>
 
-                <div class="card">
-                    <div class="img-placeholder2"></div>
-                    <div class="price-tag">
-                        <span class="price-label">Precio</span>
-                        <span class="price-amount">$204</span>
-                        <span class="price-period">por 1 noche</span>
-                    </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit">Enviar</button>
                 </div>
 
-                <div class="card">
-                    <div class="img-placeholder3"></div>
-                    <div class="price-tag">
-                        <span class="price-label">Precio</span>
-                        <span class="price-amount">$300</span>
-                        <span class="price-period">por 1 noche</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img-placeholder4"></div>
-                    <div class="price-tag">
-                        <span class="price-label">Precio</span>
-                        <span class="price-amount">$400</span>
-                        <span class="price-period">por 1 noche</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img-placeholder5"></div>
-                    <div class="price-tag">
-                        <span class="price-label">Precio</span>
-                        <span class="price-amount">$340</span>
-                        <span class="price-period">por 1 noche</span>
-                    </div>
-                </div>
-
-            </div>
+            </form>
         </main>
 
         <footer class="footer">

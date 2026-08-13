@@ -3,167 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Escape - Destinos</title>
-
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Font Awesome para los iconos -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Destinos - Mountain Escape El Salvador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="destino.css">
 </head>
-
 <body>
 
-    <!-- ==================== HEADER ==================== -->
-    <header class="header">
+    <div class="page-container">
+        
+        <header class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-mountain logo-icon"></i>
+                <div class="logo-text">
+                    <span class="brand-title">MOUNTAIN ESCAPE</span>
+                    <span class="brand-sub">EL SALVADOR</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="destino.html" class="active">Destino</a>
+                <a href="cabañas.html">Cabañas</a>
+                <a href="iglus.html">Iglus</a>
+                <a href="hoteles.html">Hoteles</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </header>
 
-        <div class="logo">
-            <img src="../assets/img/ChatGPT Image 28 jul 2026, 13_40_03.png" alt="Mountain Escape">
-        </div>
+        <section class="hero-banner">
+            <div class="hero-overlay">
+                <h1 class="hero-title">DESTINOS</h1>
+                <p class="hero-subtitle">Descubre los lugares más increíbles de montañas en El Salvador</p>
+            </div>
+        </section>
 
-        <nav class="nav">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="Destino.html">Destinos</a>
-            <a href="cabañas.html">Cabañas</a>
-            <a href="iglus.html">Iglús</a>
-            <a href="hotenes.html">Hoteles</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
+        <section class="destinos-section">
+            <div class="destinos-grid">
                 
-        </nav>
+                <div class="destino-card">
+                    <div class="card-image img-pital"></div>
+                    <div class="card-body">
+                        <p class="card-description">
+                            Las cabañas en el Cerro El Pital (Chalatenango, El Salvador)
+                        </p>
+                        <div class="card-footer">
+                            <a href="reservaciones.html" class="btn-detalles">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
 
-    </header>
+                <div class="destino-card">
+                    <div class="card-image img-cerro-verde-1"></div>
+                    <div class="card-body">
+                        <p class="card-description">
+                            cabañas en el Parque Natural Cerro Verde ofrecen una experiencia de montaña inigualable, con clima fresco y vistas espectaculares a los volcanes de Izalco
+                        </p>
+                        <div class="card-footer">
+                            <a href="reservaciones.html" class="btn-detalles">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="destino-card">
+                    <div class="card-image img-cerro-verde-2"></div>
+                    <div class="card-body">
+                        <p class="card-description">
+                            cabañas en el Parque Natural Cerro Verde ofrecen una experiencia de montaña inigualable, con clima fresco y vistas espectaculares a los volcanes de Izalco
+                        </p>
+                        <div class="card-footer">
+                            <a href="reservaciones.html" class="btn-detalles">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-
-        <img src="../assets/img/Captura de pantalla 2026-08-12 054336.png" alt="Montañas de El Salvador">
-
-        <div class="hero-contenido">
-
-            <h1>DESTINOS</h1>
-
-            <p>
-                Descubre los lugares más increíbles<br>
-                de montañas en El Salvador
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ==================== DESTINOS ==================== -->
-    <main class="destinos">
-
-        <!-- TARJETA 1 -->
-        <article class="tarjeta">
-
-            <img src="../assets/img/cerro pital.jpg" alt="Cerro El Pital">
-
-            <div class="tarjeta-contenido">
-
-                <p>
-                    Las cabañas en el Cerro El Pital (Chalatenango,
-                    El Salvador)
-                </p>
-
-                <button>Ver detalles</button>
-
-            </div>
-
-        </article>
-
-
-        <!-- TARJETA 2 -->
-        <article class="tarjeta">
-
-            <img src="../assets/img/lago coatepeque.jpg" alt="Lago de Coatepeque">
-
-            <div class="tarjeta-contenido">
-
-                <p>
-                    Las cabañas de lago de Coatepeque ofrecen visitas
-                    espectaculares al agua turquesa.
-                </p>
-
-                <button>Ver detalles</button>
+                <div class="destino-card">
+                    <div class="card-image img-coatepeque"></div>
+                    <div class="card-body">
+                        <p class="card-description">
+                            Las cabañas de lago de coatepeque ofrecen visitas espectaculares al agua turquesa.
+                        </p>
+                        <div class="card-footer">
+                            <a href="reservaciones.html" class="btn-detalles">Ver detalles</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+        </section>
 
-        </article>
-
-
-        <!-- TARJETA 3 -->
-        <article class="tarjeta">
-
-            <img src="../assets/img/Cerro-Verde.jpg" alt="Cerro Verde">
-
-            <div class="tarjeta-contenido">
-
-                <p>
-                    Cabañas en el Parque Natural Cerro Verde ofrecen una
-                    experiencia de montaña inigualable, con clima fresco y
-                    vistas espectaculares a los volcanes de Izalco.
-                </p>
-
-                <button>Ver detalles</button>
-
+        <footer class="footer">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-mountain"></i>
+                </div>
+            </div>
+            
+            <div class="footer-center">
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+503 1234 5678</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@mountainescape.sv</span>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>El Salvador centroamerica</span>
+                </div>
             </div>
 
-        </article>
-
-
-        <!-- TARJETA 4 -->
-        <article class="tarjeta">
-
-            <img src="../assets/img/lago coatepeque.jpg" alt="Cabañas del Lago de Coatepeque">
-
-            <div class="tarjeta-contenido">
-
-                <p>
-                    Las cabañas de lago de Coatepeque ofrecen visitas
-                    espectaculares al agua turquesa.
-                </p>
-
-                <button>Ver detalles</button>
-
+            <div class="footer-right">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
+        </footer>
 
-        </article>
-
-    </main>
-
-
-    <footer class="site-footer">
-  <div class="footer-container">
-    
-    <div class="footer-brand">
-            <img src="/assets/img/12 ago 2026, 05_46_12.png" alt="Mountain Escape Logo" class="footer-logo-img">
-      <span class="brand-name">Mountain Escape</span>
     </div>
 
-    <div class="footer-contact">
-      <div class="contact-item">
-        <i class="fas fa-phone-alt"></i>
-        <span>+503 1234 5678</span>
-      </div>
-      <div class="contact-item">
-        <i class="far fa-envelope"></i>
-        <span>info@mountainescape.sv</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>El Salvador, Centroamérica</span>
-      </div>
-    </div>
-
-    <div class="footer-social">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-  </div>
-</footer>
+</body>
+</html>

@@ -1,392 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Escape El Salvador</title>
 
-    <title>Mountain Escape</title>
-
-   <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 
     <header>
-
         <div class="logo">
-            <img src="../assets/img/ChatGPT Image 28 jul 2026, 13_40_03.png" alt="Mountain Escape">
+            <i class="fa-solid fa-mountain"></i> 
+            <span>MOUNTAIN ESCAPE <small>EL SALVADOR</small></span>
         </div>
-
-      <nav class="nav">
-            <a href="index.html" class="activo">Inicio</a>
-            <a href="Destino.html">Destinos</a>
-            <a href="cabañas.html">Cabañas</a>
-            <a href="iglus.html">Iglús</a>
-            <a href="hotenes.html">Hoteles</a>
-            <a href="galeria.html">Galería</a>
-            <a href="contacto.html">Contacto</a>
-     
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="./destino.html">Destino</a></li>
+                <li><a href="./cabañas.html">Cabañas</a></li>
+                <li><a href="./iglus.html">Iglus</a></li>
+                <li><a href="./hoteles.html">Hoteles</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
         </nav>
-
     </header>
 
-    <!-- ================= HERO ================= -->
-
     <section class="hero">
+        <h1>Cabañas, iglús y hoteles en medio de la Naturaleza<br>relájate, explora y vive una experiencia inolvidable.</h1>
+        <a href="" class="btn-green">EXPLORA DESTINOS</a>
 
-        <img src="../assets/img/Captura de pantalla 2026-08-12 054336.png" alt="Montañas de El Salvador">
-
-        <div class="hero-contenido">
-
-
-            <p>
-                Cabañas, iglús y hoteles en medio de la naturaleza,
-                <br>
-                relajate, explora y vive una experiencia inolvidable
-            </p>
-
-            <a href="Destino.html" class="btn-explora">
-                EXPLORA DESTINOS
-            </a>
-
+        <div class="search-box">
+            <div class="search-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="search-text">
+                    <label>¿A dónde quieres ir?</label>
+                    <span>Elige un destino</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <i class="fa-regular fa-calendar"></i>
+                <div class="search-text">
+                    <label>Fecha de entrada</label>
+                    <span>Seleccionar fecha</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <i class="fa-regular fa-calendar"></i>
+                <div class="search-text">
+                    <label>Fecha de salida</label>
+                    <span>Seleccionar fecha</span>
+                </div>
+            </div>
+            <div class="search-item">
+                <i class="fa-solid fa-user"></i>
+                <div class="search-text">
+                    <label>Huéspedes</label>
+                    <span>2 Personas</span>
+                </div>
+            </div>
+            <button class="btn-search">BUSCAR</button>
         </div>
-
     </section>
 
-
-
-    <section class="buscador">
-
-        <div class="campo">
-
-            <i class="fas fa-map-marker-alt"></i>
-
-            <div>
-
-                <label>Destino</label>
-
-                <select>
-                    <option>Apaneca</option>
-                    <option>Juayúa</option>
-                    <option>Cerro Verde</option>
-                </select>
-
-            </div>
-
-        </div>
-
-        <div class="campo">
-
-            <i class="fas fa-calendar-check"></i>
-
-            <div>
-
-                <label>Entrada</label>
-
-                <input type="date">
-
-            </div>
-
-        </div>
-
-        <div class="campo">
-
-            <i class="fas fa-calendar-alt"></i>
-
-            <div>
-
-                <label>Salida</label>
-
-                <input type="date">
-
-            </div>
-
-        </div>
-
-        <div class="campo">
-
-            <i class="fas fa-user"></i>
-
-            <div>
-
-                <label>Personas</label>
-
-                <select>
-
-                    <option>2 Personas</option>
-                    <option>4 Personas</option>
-                    <option>6 Personas</option>
-
-                </select>
-
-            </div>
-
-        </div>
-
-        <button class="btn-busqueda">
-            BUSCAR
-        </button>
-
-
-           <a href="galeria.html" class="buscar">
-
-            </a>
-
-    </section>
-
-
-    <section class="beneficios">
-
-        <div class="beneficio">
-
+    <section class="features">
+        <div class="feature-card">
             <i class="fa-solid fa-mountain-sun"></i>
-
-            <div>
-                <h3>Vistas increíbles</h3>
-                <p>paisajes que te<br>enamorarán</p>
-            </div>
-
+            <h3>Vistas increíbles</h3>
+            <p>paisajes que te enamoran</p>
         </div>
-
-
-        <div class="beneficio">
-
+        <div class="feature-card">
             <i class="fa-solid fa-leaf"></i>
-
-            <div>
-                <h3>Naturaleza pura</h3>
-                <p>aire fresco, senderos y<br>mucha tranquilidad</p>
-            </div>
-
+            <h3>Naturaleza pura</h3>
+            <p>aire fresco, senderos y mucha tranquilidad</p>
         </div>
-
-
-        <div class="beneficio">
-
-            <i class="fa-solid fa-compass"></i>
-
-            <div>
-                <h3>Experiencias únicas</h3>
-                <p>fogatas, aventuras y<br>momentos para recordar</p>
-            </div>
-
+        <div class="feature-card">
+            <i class="fa-solid fa-fire"></i>
+            <h3>Experiencias únicas</h3>
+            <p>fogatas, aventuras y momentos para recordar</p>
         </div>
-
-
-        <div class="beneficio">
-
-            <i class="fa-solid fa-shield-heart"></i>
-
-            <div>
-                <h3>Reservas seguras</h3>
-                <p>tu reserva protegida y<br>atención personalizada</p>
-            </div>
-
+        <div class="feature-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Reservas seguras</h3>
+            <p>tu reserva protegida y atención personalizada</p>
         </div>
-
     </section>
 
-
-    <!-- ================= HOSPEDAJES ================= -->
-
-    <section class="hospedajes">
-
-        <h2>
-            <span>ELIGE TU EXPERIENCIA</span><br>
-            EXPLORA NUESTROS HOSPEDAJES
-        </h2>
-
-        <div class="separador">
-            <span></span>
+    <div class="section-header">
+        <span class="section-subtitle">ELIJE TU EXPERIENCIA</span>
+        <h2 class="section-title">EXPLORA NUESTROS HOSPEDAJES</h2>
+        <div class="divider">
             <i class="fa-solid fa-mountain"></i>
-            <span></span>
         </div>
+    </div>
 
-
-
-        <!-- TARJETAS -->
-
-        <div class="tarjetas">
-
-
-            <!-- CABAÑAS -->
-
-            <article class="tarjeta">
-
-                <div class="imagen-tarjeta">
-
-                    <img src="../assets/img/OIP (1).webp" alt="Cabañas">
-
-                    <div class="icono-tarjeta">
-                        <i class="fa-solid fa-house"></i>
-                    </div>
-
-                    <div class="contenido-tarjeta">
-
+    <section class="accommodations">
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80" alt="Cabañas">
+                <div class="card-overlay">
+                    <i class="fa-solid fa-house-chimney card-icon"></i>
+                    <div class="card-info">
                         <h3>Cabañas</h3>
-
-                        <p>
-                            Comodidad y calidez en<br>
-                            medio del bosque
-                        </p>
-
-                        <div class="precio">
-                            <small>desde</small>
-                            <strong>$80</strong>
-                            <span>por noche</span>
-                        </div>
-
-                        <div class="personas">
-                            <i class="fa-solid fa-user-group"></i>
-                            4 personas
-                        </div>
-
+                        <p>Comodidad y calidez en medio del bosque</p>
+                        <p class="card-details">chimenea • wifi • 4 personas</p>
                     </div>
-
                 </div>
+                <div class="price-badge">
+                    desde <strong>$75</strong> por noche
+                </div>
+            </div>
+            <a href="./cabañas.html" class="btn-card">ver cabañas <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
 
-                <a href="cabañas.html" class="btn-card">
-                    ver cabañas
-                </a>
-
-            </article>
-
-
-            <!-- HOTELES -->
-
-            <article class="tarjeta">
-
-                <div class="imagen-tarjeta">
-
-                    <img src="../assets/img//hoteles 5.jpeg" alt="Hoteles">
-
-                    <div class="icono-tarjeta">
-                        <i class="fa-solid fa-hotel"></i>
-                    </div>
-
-                    <div class="contenido-tarjeta">
-
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hoteles">
+                <div class="card-overlay">
+                    <i class="fa-solid fa-hotel card-icon"></i>
+                    <div class="card-info">
                         <h3>Hoteles</h3>
-
-                        <p>
-                            confort y servicios<br>
-                            con todas las comodidades
-                        </p>
-
-                        <div class="precio">
-                            <small>desde</small>
-                            <strong>$90</strong>
-                            <span>por noche</span>
-                        </div>
-
-                        <div class="personas">
-                            <i class="fa-solid fa-user-group"></i>
-                            2 personas
-                        </div>
-
+                        <p>descanso y elegancia con todas las comodidades</p>
+                        <p class="card-details">piscina • wifi • restaurante</p>
                     </div>
-
                 </div>
-
-                <a href="hotenes.html" class="btn-card">
-                    ver hoteles
-                </a>
-
-            </article>
-
-
-            <!-- IGLÚS -->
-
-            <article class="tarjeta">
-
-                <div class="imagen-tarjeta">
-
-                    <img src="../assets/img/803e46fe-4dc2-468d-9612-d185b144327a.webp" alt="Iglús">
-
-                    <div class="icono-tarjeta">
-                        <i class="fa-solid fa-igloo"></i>
-                    </div>
-
-                    <div class="contenido-tarjeta">
-
-                        <h3>Iglus</h3>
-
-                        <p>
-                            vive una noche mágica<br>
-                            bajo las estrellas
-                        </p>
-
-                        <div class="precio">
-                            <small>desde</small>
-                            <strong>$120</strong>
-                            <span>por noche</span>
-                        </div>
-
-                        <div class="personas">
-                            <i class="fa-solid fa-user-group"></i>
-                            2 personas
-                        </div>
-
-                    </div>
-
+                <div class="price-badge">
+                    desde <strong>$90</strong> por noche
                 </div>
-
-                <a href="iglus.html" class="btn-card">
-                    ver iglus
-                </a>
-
-            </article>
-
-        </div>
-        
-        <!-- BOTÓN RESERVACIÓN -->
-
-        <div class="reservacion">
-
-            <a href="contacto.html">
-                HACER RESERVACIÓN
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+            </div>
+            <a href="./hoteles.html" class="btn-card">ver hoteles <i class="fa-solid fa-chevron-right"></i></a>
         </div>
 
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Iglús">
+                <div class="card-overlay">
+                    <i class="fa-solid fa-globe card-icon"></i>
+                    <div class="card-info">
+                        <h3>Iglús</h3>
+                        <p>vive una noche mágica bajo las estrellas</p>
+                        <p class="card-details">2-4 personas</p>
+                    </div>
+                </div>
+                <div class="price-badge">
+                    desde <strong>$120</strong> por noche
+                </div>
+            </div>
+            <a href="./iglus.html" class="btn-card">ver iglús <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
     </section>
 
-    <footer class="site-footer">
-  <div class="footer-container">
-    
-    <div class="footer-brand">
-      <img src="/assets/img/12 ago 2026, 05_46_12.png" alt="Mountain Escape Logo" class="footer-logo-img">
-      <span class="brand-name">Mountain Escape</span>
+    <div class="cta-container">
+        <a href="./reservaciones.html" class="btn-reservation">
+            HACER RESERVACION <i class="fa-solid fa-chevron-right"></i>
+        </a>
     </div>
 
-    <div class="footer-contact">
-      <div class="contact-item">
-        <i class="fas fa-phone-alt"></i>
-        <span>+503 1234 5678</span>
-      </div>
-      <div class="contact-item">
-        <i class="far fa-envelope"></i>
-        <span>info@mountainescape.sv</span>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <span>El Salvador, Centroamérica</span>
-      </div>
-    </div>
+    <footer>
+        <div class="footer-info">
+            <div class="footer-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+503 1234 5678</span>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@mountainescape.es</span>
+            </div>
+            <div class="footer-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>El Salvador, Centroamérica</span>
+            </div>
+        </div>
+        <div class="footer-socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
 
-    <div class="footer-social">
-      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-    </div>
-
-  </div>
-</footer>
+</body>
+</html>
